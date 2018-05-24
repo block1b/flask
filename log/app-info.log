@@ -1,0 +1,1001 @@
+2018-04-30 20:12:12,377 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:12,700 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:15,210 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:15,283 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,035 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,121 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,217 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,289 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,392 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,457 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,581 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:16,651 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:17,197 ERROR: Exception on / [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 57, in index
+    show_followed=show_followed, pagination=pagination)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\index.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-04-30 20:12:17,263 ERROR: Exception on /favicon.ico [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\errors.py", line 22, in page_not_found
+    return render_template('404.html'), 404
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 27, in block "navbar"
+    <li><a href="{{ url_for('http://cherrymonth.top:5000/') }}">Home</a></li>
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'http://cherrymonth.top:5000/'. Did you mean 'main.server_shutdown' instead?
+2018-05-22 21:34:26,714 ERROR: Exception on /upload_file [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 281, in upload_file
+    return render_template('upload_file.html', form=form, file_url=file_url)
+NameError: global name 'form' is not defined
+2018-05-22 21:34:43,536 ERROR: Exception on /upload_file [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 281, in upload_file
+    return render_template('upload_file.html', form=form, file_url=file_url)
+NameError: global name 'form' is not defined
+2018-05-23 10:50:04,486 ERROR: Exception on /upload_file [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 23, in upload_file
+    return render_template('upload_file.html', form=form, file_url=file_url)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 70, in block "content"
+    {% block page_content %}{% endblock %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 15, in block "page_content"
+    {{ form.class_name }}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\wtforms\fields\core.py", line 137, in __html__
+    return self()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\wtforms\fields\core.py", line 153, in __call__
+    return self.meta.render_field(self, kwargs)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\wtforms\meta.py", line 56, in render_field
+    return field.widget(field, **render_kw)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\wtforms\widgets\core.py", line 287, in __call__
+    for val, label, selected in field.iter_choices():
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\wtforms\fields\core.py", line 451, in iter_choices
+    for value, label in self.choices:
+TypeError: 'NoneType' object is not iterable
+2018-05-23 11:21:50,010 ERROR: Exception on /upload_file [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 23, in upload_file
+    return render_template('upload_file.html', form=form, file_url=file_url)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 70, in block "content"
+    {% block page_content %}{% endblock %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 16, in block "page_content"
+    {{ form.hidden_tag(class="col-md-4") }}
+TypeError: hidden_tag() got an unexpected keyword argument 'class'
+2018-05-23 11:22:35,039 ERROR: Exception on /upload_file [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 23, in upload_file
+    return render_template('upload_file.html', form=form, file_url=file_url)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 70, in block "content"
+    {% block page_content %}{% endblock %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 16, in block "page_content"
+    {{ form.hidden_tag(class="col-md-4") }}
+TypeError: hidden_tag() got an unexpected keyword argument 'class'
+2018-05-23 11:22:35,891 ERROR: Exception on /upload_file [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 23, in upload_file
+    return render_template('upload_file.html', form=form, file_url=file_url)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 3, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\base.html", line 70, in block "content"
+    {% block page_content %}{% endblock %}
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\templates\upload_file.html", line 16, in block "page_content"
+    {{ form.hidden_tag }}
+TypeError: hidden_tag() got an unexpected keyword argument 'class'
+2018-05-24 08:56:14,229 ERROR: Exception on /download_tar/组网工程_实验一.zip [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 25, in download_tar
+    dir_to_7z(doc_dir, zip_dir, zip_name)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\dir_to_7z.py", line 12, in dir_to_7z
+    dir_path = dir_path.decode('utf-8')
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\encodings\utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+2018-05-24 08:57:10,236 ERROR: Exception on /download_tar/组网工程_实验一.zip [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 25, in download_tar
+    dir_to_7z(doc_dir, zip_dir, zip_name)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\dir_to_7z.py", line 12, in dir_to_7z
+    # dir_path = dir_path.decode('utf-8')
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\encodings\utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+2018-05-24 08:59:45,717 ERROR: Exception on /download_tar/组网工程_实验一.zip [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 25, in download_tar
+    dir_to_7z(doc_dir, zip_dir, zip_name)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\dir_to_7z.py", line 12, in dir_to_7z
+    dir_path = dir_path.decode('utf-8')
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\encodings\utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+2018-05-24 09:00:28,234 ERROR: Exception on /download_tar/组网工程_实验一.zip [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 25, in download_tar
+    dir_to_7z(doc_dir, zip_dir, zip_name)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\dir_to_7z.py", line 12, in dir_to_7z
+    dir_path = dir_path.decode('utf-8')
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\encodings\utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+2018-05-24 09:00:36,917 ERROR: Exception on /download_tar/组网工程_实验一.zip [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 25, in download_tar
+    dir_to_7z(doc_dir, zip_dir, zip_name)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\dir_to_7z.py", line 12, in dir_to_7z
+    dir_path = dir_path.decode('utf-8')
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\encodings\utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+2018-05-24 09:00:53,069 ERROR: Exception on /download_tar/组网工程_实验一.zip [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 25, in download_tar
+    dir_to_7z(doc_dir, zip_dir, zip_name)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\dir_to_7z.py", line 12, in dir_to_7z
+    try:
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\encodings\utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+2018-05-24 09:32:44,210 ERROR: Exception on /download_tar/组网工程_实验一 [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 29, in download_tar
+    fname = filename.encode('cp936')
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)
+2018-05-24 09:32:48,038 ERROR: Exception on /download_tar/组网工程_实验一 [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 29, in download_tar
+    fname = filename.encode('cp936')
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)
+2018-05-24 09:33:54,869 ERROR: Exception on /download_tar/组网工程_实验一 [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 29, in download_tar
+    # fname = filename.encode('UTF-8')
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)
+2018-05-24 09:45:10,423 ERROR: Exception on /download_tar/组网工程_实验一 [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 29, in download_tar
+    fname = zip_name.encode('cp936')
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)
+2018-05-24 09:45:21,299 ERROR: Exception on /download_tar/组网工程_实验一 [GET] [in E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\venv32_flsk\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\block_han\mydata\my_python\my_learn\flask_learn\flasky-first-edition\app\main\views.py", line 29, in download_tar
+    fname = zip_name.encode('cp936')
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)
